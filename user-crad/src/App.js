@@ -28,7 +28,8 @@ class App extends React.Component {
     .then(res => {
       console.log(res);
       this.setState({
-        users: res.data
+        users: res.data,
+        text: ''
       });
     })
     .catch(err => console.log(err));
